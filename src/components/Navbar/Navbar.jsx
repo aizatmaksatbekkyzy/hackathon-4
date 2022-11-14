@@ -13,7 +13,22 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+import { useNavigate } from "react-router-dom";
+import { UserContext } from "../../context/AuthContextProvider";
 
+const pages = [ 
+];
+const settings = [{
+  type:"Register",
+  path: "/register",
+  id:1
+},
+{
+  type:"Login",
+  path: "/login",
+  id:2
+}
+];
 const pages = [
   {
     type: "Animals",
@@ -43,6 +58,11 @@ function ResponsiveAppBar() {
   };
 
   const navigate = useNavigate();
+  const { logout, user, checkAuth } = UserContext();
+
+
+ 
+
 
   return (
     <AppBar position="static">
@@ -159,11 +179,17 @@ function ResponsiveAppBar() {
               }}
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}>
-              {settings.map(setting => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+                {settings.map((setting) => (
+                <MenuItem key={setting.type} onClick={handleCloseUserMenu}>
+                  <Typography textAlign="center" onClick={() =>
+               navigate(setting.path)}>{setting.type}</Typography>
                 </MenuItem>
               ))}
+               <MenuItem  onClick={handleCloseUserMenu}>
+                  <Typography textAlign="center" onClick={logout}>
+                    Logout
+                  </Typography>
+                </MenuItem>
             </Menu>
           </Box>
         </Toolbar>

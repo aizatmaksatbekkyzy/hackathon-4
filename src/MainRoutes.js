@@ -1,9 +1,11 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import AnimalsPage from "./pages/AnimalsPage";
 import CardPage from "./pages/CardPage";
 import EditAnimalPage from "./pages/EditAnimalPage";
 import HomePage from "./pages/HomePage";
+import LoginPage from "./pages/LoginPage";
+import RegistrationPage from "./pages/RegistrationPage";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -27,8 +29,23 @@ const MainRoutes = () => {
       element: <EditAnimalPage />,
       // id: 4,
     },
+    {
+      link: "/register",
+      element: <RegistrationPage />,
+      id: 5,
+    },
+    {
+      link: "/login",
+      element: <LoginPage />,
+      id: 5,
+    }
   ];
   return (
+      <Routes>
+        {PUBLIC_ROUTES.map(item => (
+          <Route path={item.link} element={item.element} key={item.id} />
+        ))}
+      </Routes>
     <Routes>
       {PUBLIC_ROUTES.map(item => (
         <Route path={item.link} element={item.element} key={item.id} />
