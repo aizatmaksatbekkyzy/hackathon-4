@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import AnimalsPage from "./pages/AnimalsPage";
-import CartPage from "./pages/CartPage";
+import CardPage from "./pages/CardPage";
 import EditAnimalPage from "./pages/EditAnimalPage";
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
@@ -20,14 +20,14 @@ const MainRoutes = () => {
       id: 2,
     },
     {
-      link: "/cart",
-      element: <CartPage />,
+      link: "/card",
+      element: <CardPage />,
       id: 3,
     },
     {
-      link: "/edit",
+      link: "/edit/:id",
       element: <EditAnimalPage />,
-      id: 4,
+      // id: 4,
     },
     {
       link: "/register",
@@ -41,13 +41,16 @@ const MainRoutes = () => {
     }
   ];
   return (
-
       <Routes>
         {PUBLIC_ROUTES.map(item => (
           <Route path={item.link} element={item.element} key={item.id} />
         ))}
       </Routes>
-    
+    <Routes>
+      {PUBLIC_ROUTES.map(item => (
+        <Route path={item.link} element={item.element} key={item.id} />
+      ))}
+    </Routes>
   );
 };
 

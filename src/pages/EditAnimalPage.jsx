@@ -1,7 +1,11 @@
 import React from "react";
-
+import EditAnimals from "../components/animals/EditAnimals/EditAnimals";
 const EditAnimalPage = () => {
-  return <div>EditAnimalPage</div>;
+  return (
+    <>
+      <EditAnimals />
+    </>
+  );
 };
 
 export default EditAnimalPage;

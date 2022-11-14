@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useNavigate } from "react-router-dom";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -28,6 +29,14 @@ const settings = [{
   id:2
 }
 ];
+const pages = [
+  {
+    type: "Animals",
+    path: "/card",
+    id: 1,
+  },
+];
+const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -53,6 +62,8 @@ function ResponsiveAppBar() {
 
 
  
+
+
   return (
     <AppBar position="static">
       <Container maxWidth="xl">
@@ -110,13 +121,13 @@ function ResponsiveAppBar() {
                 display: { xs: "block", md: "none" },
               }}>
               {pages.map(page => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem onClick={() => navigate(page.path)}>
+                  <Typography textAlign="center">{page.type}</Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+
           <Typography
             variant="h5"
             noWrap
@@ -132,16 +143,18 @@ function ResponsiveAppBar() {
               color: "inherit",
               textDecoration: "none",
             }}>
-            LOGO
+            Cats&Dogs
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map(page => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}>
-                {page}
-              </Button>
+              <>
+                <Button
+                  // key={page}
+                  onClick={() => navigate(page.path)}
+                  sx={{ my: 2, color: "white", display: "block" }}>
+                  {page.type}
+                </Button>
+              </>
             ))}
           </Box>
 
