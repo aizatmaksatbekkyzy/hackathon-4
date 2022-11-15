@@ -1,19 +1,17 @@
 import React from "react";
 import MainRoutes from "./MainRoutes";
-import Navbar from "./components/Navbar/Navbar";
+import Header from "./components/Header/Header";
 import AuthContextProvider from "./context/AuthContextProvider";
 import AnimalContextProvider from "./contexts/AnimalContextProvider";
 
 const App = () => {
   return (
     <>
-    <AuthContextProvider>
-      <Navbar />
-      <MainRoutes />
-      </AuthContextProvider>
       <AnimalContextProvider>
-        <Navbar />
-        <MainRoutes />
+        <AuthContextProvider>
+          <Header />
+          <MainRoutes />
+        </AuthContextProvider>
       </AnimalContextProvider>
     </>
   );
