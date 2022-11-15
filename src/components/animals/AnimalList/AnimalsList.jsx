@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useAnimals } from "../../../contexts/AnimalContextProvider";
 import CardAnimal from "../CardAnimal/CardAnimal";
-import Pagination from "@mui/material/Pagination";
+// import Pagination from "@mui/material/Pagination";
 
 const AnimalsList = () => {
   const { animals, getAnimals } = useAnimals();
