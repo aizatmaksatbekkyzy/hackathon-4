@@ -13,50 +13,48 @@ export default function CardAnimal({ item }) {
   console.log(item);
   const navigate = useNavigate();
   return (
-    <Card className="container">
-      <Card
-        sx={{ maxWidth: 500 }}
-        style={{
-          width: "280px",
-        }}>
-        <CardMedia
-          component="img"
-          height="160"
-          image={item.img}
-          alt="green iguana"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Breed:
-            {item.breed}
-          </Typography>
-          <Typography gutterBottom variant="h5" component="div">
-            Name:
-            {item.name}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Age:
-            {item.age}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {" "}
-            Description:
-            {item.desc}
-          </Typography>
-          <Typography gutterBottom variant="h6" component="div">
-            Price:
-            {item.price} $
-          </Typography>
-        </CardContent>
-        <CardActions>
-          <Button size="small" onClick={() => deleteAnimal(item.id)}>
-            Delete
-          </Button>
-          <Button size="small" onClick={() => navigate(`/edit/${item.id}`)}>
-            Edit
-          </Button>
-        </CardActions>
-      </Card>
+    <Card
+      sx={{ maxWidth: 500 }}
+      style={{
+        width: "280px",
+      }}>
+      <CardMedia
+        component="img"
+        height="160"
+        image={item.img}
+        alt="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Breed:
+          {item.breed}
+        </Typography>
+        <Typography gutterBottom variant="h5" component="div">
+          Name:
+          {item.name}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          Age:
+          {item.age}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          {" "}
+          Description:
+          {item.desc}
+        </Typography>
+        <Typography gutterBottom variant="h6" component="div">
+          Price:
+          {item.price} $
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small" onClick={() => deleteAnimal(item.id)}>
+          Delete
+        </Button>
+        <Button size="small" onClick={() => navigate(`/edit/${item.id}`)}>
+          Edit
+        </Button>
+      </CardActions>
     </Card>
   );
 }

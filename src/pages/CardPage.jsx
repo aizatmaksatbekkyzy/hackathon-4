@@ -1,5 +1,5 @@
 import React from "react";
-import AnimalsList from "../components/animals/AmimalsList/AnimalsList";
+import AnimalsList from "../components/animals/AnimalList/AnimalsList";
 
 const CardPage = () => {
   return (

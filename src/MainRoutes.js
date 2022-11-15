@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import AnimalsPage from "./pages/AnimalsPage";
 import CardPage from "./pages/CardPage";
+import CartPage from "./pages/CartPage";
 import EditAnimalPage from "./pages/EditAnimalPage";
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
@@ -37,7 +38,12 @@ const MainRoutes = () => {
     {
       link: "/login",
       element: <LoginPage />,
-      id: 5,
+      id: 6,
+    },
+    {
+      link: "/cart",
+      element: <CartPage />,
+      id: 7,
     },
   ];
   return (

@@ -3,20 +3,11 @@
     {
       "breed": "ad",
       "name": "asd",
-      "age": "12",
+      "age": "1234",
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE2RDKD4DtfE2TlatcZtVgBRGE2Y406nFQIA&usqp=CAU",
       "desc": "w",
       "price": 123,
       "id": 5
-    },
-    {
-      "breed": "as",
-      "name": "xsa",
-      "age": "1234",
-      "img": "http://nemetzkaya-ovcharka.ru/wp-content/uploads/2021/06/1-nemeckaja-ovcharka-e1667824593135.jpg",
-      "desc": "sx",
-      "price": 123,
-      "id": 6
     }
   ]
 }
