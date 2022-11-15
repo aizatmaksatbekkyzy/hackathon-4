@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useReducer } from "react";
 import axios from "axios";
 import { MOTIONS, JSON_API_ANIMALS } from "../helpers/bigConsts";
-// import { useNavigate } from "react-router-dom";
+// import { useNavigate, useLocation } from "react-router-dom";
 
 export const animalContext = createContext();
 export const useAnimals = () => useContext(animalContext);
@@ -42,18 +42,18 @@ const AnimalContextProvider = ({ children }) => {
   };
 
   const getOneAnimal = async id => {
-    let res = await axios(`${JSON_API_ANIMALS}/${id}`);
+    let { data } = await axios(`${JSON_API_ANIMALS}/${id}`);
     dispatch({
       type: MOTIONS.GET_ANIMAL_DETAILS,
-      payload: res.data,
+      payload: data,
     });
-  };
-  const deleteAnimal = async id => {
-    await axios.delete(`${JSON_API_ANIMALS}/${id}`);
-    getAnimals();
   };
   const saveEditedAnimal = async newAnimal => {
     await axios.patch(`${JSON_API_ANIMALS}/${newAnimal.id}`, newAnimal);
+    getAnimals();
+  };
+  const deleteAnimal = async id => {
+    await axios.delete(`${JSON_API_ANIMALS}/${id}`);
     getAnimals();
   };
 

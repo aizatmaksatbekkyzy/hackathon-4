@@ -27,7 +27,7 @@ const MainRoutes = () => {
     {
       link: "/edit/:id",
       element: <EditAnimalPage />,
-      // id: 4,
+      id: 4,
     },
     {
       link: "/register",
@@ -38,14 +38,9 @@ const MainRoutes = () => {
       link: "/login",
       element: <LoginPage />,
       id: 5,
-    }
+    },
   ];
   return (
-      <Routes>
-        {PUBLIC_ROUTES.map(item => (
-          <Route path={item.link} element={item.element} key={item.id} />
-        ))}
-      </Routes>
     <Routes>
       {PUBLIC_ROUTES.map(item => (
         <Route path={item.link} element={item.element} key={item.id} />

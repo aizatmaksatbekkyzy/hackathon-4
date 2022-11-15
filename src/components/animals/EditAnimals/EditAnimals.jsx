@@ -9,6 +9,8 @@ const EditAnimals = () => {
   const navigate = useNavigate();
 
   const { id } = useParams();
+  console.log(id);
+
   useEffect(() => {
     getOneAnimal(id);
   }, []);
