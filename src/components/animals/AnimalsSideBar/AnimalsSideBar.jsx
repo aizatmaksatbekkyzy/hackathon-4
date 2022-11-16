@@ -7,7 +7,7 @@ import { useAnimals } from '../../../contexts/AnimalContextProvider'
 const AnimalsSideBar = ({ isSideBar, setPage }) => {
     const [searchParams, setSearchParams] = useSearchParams();
     const [search, setSearch] = useState(searchParams.get('q') || '');
-    const {getProducts} = useAnimals();
+    const {getAnimals} = useAnimals();
 
     useEffect(() => { 
         setSearchParams({
@@ -17,7 +17,7 @@ const AnimalsSideBar = ({ isSideBar, setPage }) => {
     }, [search])
 
     useEffect(() => {
-        getProducts();
+      getAnimals();
         setPage(1);
     }, [searchParams])
 

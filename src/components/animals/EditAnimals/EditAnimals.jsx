@@ -9,7 +9,7 @@ const EditAnimals = () => {
   const navigate = useNavigate();
 
   const { id } = useParams();
-  console.log(id);
+  console.log(animalDetails);
 
   useEffect(() => {
     getOneAnimal(id);
@@ -34,6 +34,9 @@ const EditAnimals = () => {
       setAnimal(obj);
     }
   };
+  if (!animalDetails || !animal) {
+    return <h1>Loading...</h1>;
+  }
   return (
     <div
       style={{

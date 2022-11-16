@@ -116,7 +116,7 @@ function ResponsiveAppBar() {
                 display: { xs: "block", md: "none" },
               }}>
               {pages.map(page => (
-                <MenuItem key={page.type} onClick={() => navigate(page.path)}>{page.type}
+                <MenuItem onClick={() => navigate(page.path)} key={page.id}>
                   <Typography textAlign="center">{page.type}</Typography>
                 </MenuItem>
               ))}
@@ -142,14 +142,13 @@ function ResponsiveAppBar() {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map(page => (
-              <>
-                <Button
-                  key={page.type}
-                  onClick={() => navigate(page.path)}
-                  sx={{ my: 2, color: "white", display: "block" }}>
-                  {page.type}
-                </Button>
-              </>
+             <Button
+             key={page.id}
+             onClick={() => navigate(page.path)}
+             sx={{ my: 2, color: "white", display: "block" }}>
+             {page.type}
+           </Button>
+
             ))}
           </Box>
 
