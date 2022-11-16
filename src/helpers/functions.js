@@ -1,7 +1,7 @@
 export function getCountsAnimalstInCart() {
   const cart = JSON.parse(localStorage.getItem("cart"));
   // console.log(cart);
-  // return cart ? cart.animals.length : 0;
+  return cart ? cart.animals.length : 0;
 }
 export const calcSubPrice = animal => +animal.count * animal.item.price;
 

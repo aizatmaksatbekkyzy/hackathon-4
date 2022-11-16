@@ -8,14 +8,15 @@ const AnimalsList = () => {
   useEffect(() => {
     getAnimals();
   }, []);
+
   // console.log(animals, getAnimals);
   // const itemsOnPage = 6;
   // const count = Math.ceil(products.length / itemsOnPage);
 
-  // const handlePage = (e, p) => {
+  //   const handlePage = (e, p) => {
   //   setPage(p);
-  // };
-  // function currentData() {
+  //  };
+  //   function currentData() {
   //   const begin = (page - 1) * itemsOnPage;
   //   const end = begin + itemsOnPage;
   //   return products.slice(begin, end);
@@ -23,24 +24,33 @@ const AnimalsList = () => {
 
   return (
     <div>
-      <h2>Animals List</h2>
-      <button>SideBar and Filter</button>
-
-      {animals ? (
-        animals.map(item => <CardAnimal key={item.id} item={item} />)
-      ) : (
-        <h4>Loading...</h4>
-      )}
-
-      {/* <Pagination
+      <h1
         style={{
-          marginLeft: "480px",
-        }}
-        color="primary"
-        count={count}
-        page={page}
-        onChange={handlePage}
-      /> */}
+          marginLeft: "40%",
+          marginTop: "5%",
+          color: "rgb(8,112,224)",
+        }}>
+        Animals List
+      </h1>
+      <div className="animals-list">
+        {/* <button>SideBar and Filter</button> */}
+
+        {animals ? (
+          animals.map(item => <CardAnimal key={item.id} item={item} />)
+        ) : (
+          <h4>Loading...</h4>
+        )}
+
+        {/* <Pagination
+          style={{
+            marginLeft: "480px",
+          }}
+          color="primary"
+          count={count}
+          page={page}
+          onChange={handlePage}
+        /> */}
+      </div>
     </div>
   );
 };

@@ -7,7 +7,6 @@ import {
 } from "../helpers/functions";
 
 const cartContext = createContext();
-
 export const useCart = () => useContext(cartContext);
 const INIT_STATE = {
   cart: JSON.parse(localStorage.getItem("cart")),
@@ -52,7 +51,7 @@ const CartContextProvider = ({ children }) => {
       payload: getCountsAnimalstInCart(),
     });
   };
-  const cart = animal => {
+  const addAnimalToCart = animal => {
     let cart = JSON.parse(localStorage.getItem("cart"));
     if (!cart) {
       cart = {
@@ -65,14 +64,14 @@ const CartContextProvider = ({ children }) => {
       count: 1,
       subPrice: +animal.price,
     };
-    // let animalToFind = cart.animals.filter(elem => elem.item.id === animal.id);
-    // if (animalToFind.length === 0) {
-    //   cart.animals.push(newAnimal);
-    // } else {
-    //   cart.animals = cart.animals.filter(elem => elem.item.id !== animal.id);
-    // }
+    let animalToFind = cart.animals.filter(elem => elem.item.id === animal.id);
+    if (animalToFind.length === 0) {
+      cart.animals.push(newAnimal);
+    } else {
+      cart.animals = cart.animals.filter(elem => elem.item.id !== animal.id);
+    }
     cart.totalPrice = calcTotalPrice(cart.animals);
-    localStorage.setitem("cart", JSON.stringify(cart));
+    localStorage.setItem("cart", JSON.stringify(cart));
     getCart();
   };
 
@@ -108,7 +107,7 @@ const CartContextProvider = ({ children }) => {
     }
   };
   const values = {
-    // addAnimalToCart,
+    addAnimalToCart,
     getCart,
     changeAnimalCount,
     deleteAnimalInCart,
@@ -118,9 +117,7 @@ const CartContextProvider = ({ children }) => {
     cart: state.cart,
     cartLength: state.cartLength,
   };
-  return (
-    <cartContext.Provider value={{ values }}>{children}</cartContext.Provider>
-  );
+  return <cartContext.Provider value={values}>{children}</cartContext.Provider>;
 };
 
 export default CartContextProvider;

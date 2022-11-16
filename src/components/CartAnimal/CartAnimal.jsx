@@ -9,15 +9,15 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 //custom
 import { useCart } from "../../contexts/CartContextProvider";
-import { useAnimals } from "../../contexts/AnimalContextProvider";
+// import { useAnimals } from "../../contexts/CartContextProvider";
 import { Button, TextField, Typography } from "@mui/material";
 
 export default function Cart() {
   const { getCart, cart, changeAnimalCount, deleteAnimalInCart } = useCart();
 
-  React.useEffect(() => {
-    getCart();
-  }, []);
+  // React.useEffect(() => {
+  //   getCart();
+  // }, []);
 
   function cartCleaner() {
     localStorage.removeItem("cart");
@@ -44,17 +44,13 @@ export default function Cart() {
     },
   }));
 
-  function createData(name, calories, fat, carbs, protein) {
-    return { name, calories, fat, carbs, protein };
-  }
-
-  const rows = [
-    createData("Frozen yoghurt", 159, 6.0, 24, 4.0),
-    createData("Ice cream sandwich", 237, 9.0, 37, 4.3),
-    createData("Eclair", 262, 16.0, 24, 6.0),
-    createData("Cupcake", 305, 3.7, 67, 4.3),
-    createData("Gingerbread", 356, 16.0, 49, 3.9),
-  ];
+  // const rows = [
+  //   createData("Frozen yoghurt", 159, 6.0, 24, 4.0),
+  //   createData("Ice cream sandwich", 237, 9.0, 37, 4.3),
+  //   createData("Eclair", 262, 16.0, 24, 6.0),
+  //   createData("Cupcake", 305, 3.7, 67, 4.3),
+  //   createData("Gingerbread", 356, 16.0, 49, 3.9),
+  // ];
 
   return (
     <TableContainer component={Paper}>
@@ -66,16 +62,17 @@ export default function Cart() {
             <StyledTableCell align="right">PRICE</StyledTableCell>
             <StyledTableCell align="right">Count</StyledTableCell>
             <StyledTableCell align="right">Sub Price</StyledTableCell>
+            <StyledTableCell align="right"></StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {cart?.animals.map(row => (
-            <StyledTableRow key={row.name}>
+            <StyledTableRow key={row.item.id}>
               <StyledTableCell component="th" scope="row">
                 <img src={row.item.img} alt="" width="60" />
               </StyledTableCell>
-              <StyledTableCell align="right">{row.breed}</StyledTableCell>
-              <StyledTableCell align="right">{row.price}</StyledTableCell>
+              <StyledTableCell align="right">{row.item.breed}</StyledTableCell>
+              <StyledTableCell align="right">{row.item.price}</StyledTableCell>
               <StyledTableCell align="right">
                 <TextField
                   type="number"
@@ -84,9 +81,7 @@ export default function Cart() {
                   onChange={e => changeAnimalCount(e.target.value, row.item.id)}
                 />
               </StyledTableCell>
-              <StyledTableCell align="right">
-                {row.item.subPrice}
-              </StyledTableCell>
+              <StyledTableCell align="right">{row.subPrice}</StyledTableCell>
               <StyledTableCell align="right">
                 <button
                   onClick={() => deleteAnimalInCart(row.item.id)}
@@ -100,7 +95,7 @@ export default function Cart() {
         </TableBody>
       </Table>
       <Typography>
-        <div className=" total-price">Total Price: {cart?.totalPrice}</div>
+        Total Price: {cart?.totalPrice}
         <Button onClick={cartCleaner}>
           <div className="buy">Buy Now</div>
         </Button>

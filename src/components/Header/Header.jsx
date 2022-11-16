@@ -2,6 +2,7 @@ import * as React from "react";
 import { useNavigate } from "react-router-dom";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
+import Fab from "@mui/material/Fab";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
@@ -13,7 +14,8 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
-
+import AddIcon from "@mui/icons-material/Add";
+import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import { UserContext } from "../../context/AuthContextProvider";
 
 const pages = [
@@ -122,6 +124,7 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
+          <AddShoppingCartIcon onClick={() => navigate("/cart")} />
 
           <Typography
             variant="h5"
@@ -150,6 +153,15 @@ function ResponsiveAppBar() {
               </Button>
             ))}
           </Box>
+          <Fab
+            color="light"
+            aria-label="add"
+            size="small"
+            style={{
+              marginRight: "10px",
+            }}>
+            <AddIcon onClick={() => navigate("/animals")} />
+          </Fab>
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">

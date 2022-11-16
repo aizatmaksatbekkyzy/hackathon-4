@@ -9,7 +9,6 @@ const AddAnimals = () => {
 
   const [animal, setAnimal] = useState({
     breed: "",
-    name: "",
     age: "",
     img: "",
     desc: "",
@@ -54,15 +53,7 @@ const AddAnimals = () => {
             onChange={handleInp}
           />
         </div>
-        <div>
-          <input
-            className="name-inp"
-            type="text"
-            placeholder="Name"
-            name="name"
-            onChange={handleInp}
-          />
-        </div>
+
         <div>
           <input
             className="age-inp"

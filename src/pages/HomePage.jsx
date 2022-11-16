@@ -1,7 +1,11 @@
 import React from "react";
-
+import HomeAnimals from "../components/animals/HomeAnimals/HomeAnimals";
 const HomePage = () => {
-  return <div>HomePage</div>;
+  return (
+    <>
+      <HomeAnimals />
+    </>
+  );
 };
 
 export default HomePage;

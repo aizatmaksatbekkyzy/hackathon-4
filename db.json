@@ -1,13 +1,277 @@
 {
   "animals": [
     {
-      "breed": "ad",
-      "name": "asd",
-      "age": "1234",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE2RDKD4DtfE2TlatcZtVgBRGE2Y406nFQIA&usqp=CAU",
-      "desc": "w",
+      "breed": "чау-чау",
+      "age": "6-месяцев",
+      "img": "https://st.kloomba.com/img/club/2016/05/05/Storozhevaya-sobakam-Chauchau-630bbff9.jpg",
+      "desc": " Очень своеобразный характер у песика, нужен свой подход, обидчивый ",
+      "price": "100",
+      "id": 6
+    },
+    {
+      "breed": "немецкая овчарка",
+      "name": "",
+      "age": "4-мес",
+      "img": "https://soba4nik.ru/wp-content/uploads/2022/01/0e3caa4a.jpg",
+      "desc": "",
+      "price": 88,
+      "id": 8
+    },
+    {
+      "breed": "лабрадор",
+      "age": "",
+      "img": "https://irecommend.ru/sites/default/files/imagecache/copyright1/user-images/1924838/HuKfK6FfyFR1aplsERjAg.jpeg",
+      "desc": "",
+      "price": 40,
+      "id": 9
+    },
+    {
+      "breed": "чау-чау",
+      "age": "6-мес",
+      "img": "https://24tail.com/images/groups/0/133_4.jpg",
+      "desc": "Тщательнейший уход за шерстью, чтобы не было колтунов",
+      "price": 120,
+      "id": 10
+    },
+    {
+      "breed": "немецкая овчарка",
+      "age": "2",
+      "img": "https://www.belanta.vet/vet-blog/wp-content/uploads/2018/04/nemeckaya-ovcharka-01.jpg",
+      "desc": "",
+      "price": "",
+      "id": 11
+    },
+    {
+      "breed": "немецкая овчарка",
+      "age": "3-мес",
+      "img": "https://frankfurt.apollo.olxcdn.com/v1/files/092lnj5u2tgn-KZ/image;s=644x461",
+      "desc": "",
+      "price": 100,
+      "id": 12
+    },
+    {
+      "breed": "лабрадор",
+      "age": "3-мес",
+      "img": "https://storage-api.petstory.ru/resize/800x800x80/40/c9/07/40c9072a21ff4793a68575bc24631e2c.jpeg",
+      "desc": "",
+      "price": 50,
+      "id": 13
+    },
+    {
+      "breed": "лабрадор",
+      "age": "2-мес",
+      "img": "https://ireland.apollo.olxcdn.com/v1/files/6udk65jmmtbd2-UA/image;s=1000x700",
+      "desc": "",
+      "price": 30,
+      "id": 14
+    },
+    {
+      "breed": "бульдог",
+      "age": "3-мес",
+      "img": "https://rrav.ru/storage/articles/June2020/5ZJSYj2YpAMltryG37Xx.webp",
+      "desc": "",
+      "price": 50,
+      "id": 15
+    },
+    {
+      "breed": "бульдог",
+      "age": "3-мес",
+      "img": "https://petglobals.com/imagesaver/form/big/4gsm3voczshsnyy91ezv_1627552994.jpg",
+      "desc": "",
+      "price": 40,
+      "id": 16
+    },
+    {
+      "breed": "бульдог",
+      "age": "",
+      "img": "https://petglobals.com/imagesaver/form/big/asryud1d2immhn3e98if_1548674457.jpg",
+      "desc": "2,5-мес",
+      "price": 40,
+      "id": 17
+    },
+    {
+      "breed": "бульдог",
+      "age": "1,5-года",
+      "img": "https://glorypets.ru/wp-content/uploads/2020/09/1-Amerikanskij-buldog.jpg",
+      "desc": "",
+      "price": 190,
+      "id": 18
+    },
+    {
+      "breed": "чихуахуа",
+      "age": "2-мес",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDGUoJ8J6VyFID39fajzma0OHIKiHWt_tX_dO-L3Ya0Kl30D3ZPx8iEVZgi2tXLLw5W_o&usqp=CAU",
+      "desc": "",
+      "price": 80,
+      "id": 19
+    },
+    {
+      "breed": "чихуахуа",
+      "age": "3-мес",
+      "img": "https://resizer.mail.ru/p/8b932a2d-f2c3-549f-b335-9b699dafa4c8/AQAOHyzVpKBRHHOXtc363wo2aURRFg_c3l-n_6zUNW4oCdc_XFEsFqZw-UmBX-LQh4jk3qJAEkZt3BUM9QBmp3H-aKE.jpg",
+      "desc": "",
+      "price": 134,
+      "id": 20
+    },
+    {
+      "breed": "чихуахуа",
+      "age": "2",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4omm194IowHP5SMmWI2skiki8cYSDBlmSQ&usqp=CAU",
+      "desc": "",
       "price": 123,
-      "id": 5
+      "id": 21
+    },
+    {
+      "breed": "пудель",
+      "age": "3",
+      "img": "https://funart.pro/uploads/posts/2021-07/1627177808_8-funart-pro-p-toi-pudel-arlekin-zhivotnie-krasivo-foto-8.jpg",
+      "desc": "",
+      "price": 154,
+      "id": 22
+    },
+    {
+      "breed": "пудель",
+      "age": "",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLqsUYLhrvg_04bcNDrA6xfgxCVmbe78mYCw&usqp=CAU",
+      "desc": "",
+      "price": 12,
+      "id": 23
+    },
+    {
+      "breed": "хаски",
+      "age": "1",
+      "img": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgWFhYZGRgaHRweHRocHBwhIR8cGhoaHhodHB4cIS4lISQrHxweJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHxISHzQrJCw0NDQ0NDQ0NjQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAN0A5AMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAADBAUGAAECBwj/xAA5EAACAQIEBAMHBAIBBAMBAAABAhEAIQMEEjEFQVFhInGBBjKRobHB8BNC0eEUUmIHI6LxFjNyFf/EABgBAQEBAQEAAAAAAAAAAAAAAAEAAgME/8QAJBEBAQEAAgICAgIDAQAAAAAAAQARAiExQRJRA2FxgZGhsUL/2gAMAwEAAhEDEQA/ABYfEgD4pee1p9BUph4utGYagRsCv0msOVQKCIUEy0Hr3rSKTqhjAtPXyrn2WtG4TMFBcAE7sQs+ldnFNmtHL+6WxQrT1HOfrRBlwUN21Mem0dKMSdPMbN6WIgkWnwixPf1pfQmrWHaQIgqCB3HeuXbDw/Di4sagdzAHYTSmJiJC6Cz6jAINiPTekz3DMZmXIsB3tz5xRwsLYz1PWhplQsLoGk73M+poePhlWHhASRF5jnegfuk+ph8W1zBvYffnQ8DFKgksYJnT5bTzmuMyhKOU3EEHqew3incNVKLYEtzFpMc6t3xWQP8ALuWkKPj8aOM0dIYCRt4jue1ctgAlV0KACLD6mazHywLqRpgd+m1J7phhQWgCADMzN6rfGfaRsLG/Tw1OJp98i0eH3VjoDM+lT7cQRFxX2KjxdLCY86R4Hw5UwtbiXxJdierSfvHpVxClmctih0Vk1srQdVhp6qe9tqey6zqPiN5LkXAG0dqiuHThYhC//W+46PtIHepN1NzLSbaRMAd6k7rbNRYkSY3BkQfhQQEWF1EM27aQbTeJ5V1lsM3IsB2+lB/ULJMOrEmNe8A9rVJnRQ+2f/xEliNJaYQiBqPInl61zgpuW0sbwByHPtNByeYDFkYnXF7REbQe9aGIyEhWULa7AltXpWHDu134uWw3YsUIANxO/kfOmcUoUAMg2BB+fpS/6bxrK6hEEyYFp1b0wmOQQ4IYyDaIiLTPKtq+bGFxiMZUAGdtUgrfre4oec4cxkgj4x5yNqzDGklmEgtK8gPSpEEOmsbEG07eVO73WfHokDjDwp4oSLchG3nUfns07EqELSORhooruNSjlquW3IgwBFdYmPAhFDMSL9udyaNfficu0yJVUhtMC4N/nQ8x4GPh1GxlbG3WedExjoILmQxAk/tnlHTvTeKrF2QsDMkdrQb9aF9UQsPNORMqn/ErcefesqOwQpF2uDFu3XvWVdVkzgucJmLGVsSGj1BFNtxFHBxEGlCbqdhHOks7g+JLG9ySJBrh0n3RAHUfzV+6JlMANLTpB2reZzCoPCxgWje/Y1jLGkkyDt8OVaGCDZLgC5YTccoqpq9jZX/KzIV//rwxfu7desAfOmsT2fxMsf1MAluZQ7HaQOh3vUll8HQhciGckmPMwI8qkchnZHkflXT1ZyjeE8R/UBO14OoxpjcGOdOFNakcpM9THQ1G8V4cuA3+Qi6kLf8AcQdD+4RzH0qTwnXTKQVYAg8o33G9YROrWkPCywICwwA6Hb1ousqZHjUTYmPz1pdcxDBTMHYgWg0zj4a8yNPTy60Bnil3zYAqzMHUbDpPftQhhIoGtyRyIHwii4GXDeNYIGw6A+VHThoB1kgHc2sLcprQb3C500PxLATEZMAbOQ7SIOhCPq0fA01xLECIVHLb8/N6jPZTCbFzOPmHYkKWRDy0qYkfWie0LFWgncTSEnbE4U+owfL8/OdSLoSCLyIEyLiongAtJqdzmMMMkkHxAQZAjymrkU9QsBUC6ZIE7nr3oeExVVkb7c+fKajMzx/AULLSw3A+/U0FPafBJMFtojp3FYxK2mszlWcFtWgA3Mi9rQOVLtjKW0gyZ2CzfrWZTjOC6AAjUBz3Pn1pnNZcKngVZkEaTBO3OtPH49xuwsLPOvhVSyDcgXFulD/yjIXQUk7kAC9NYWMUJXr+4+XPvS+bzamNcmPdKgEA9aF60o499zGZw30mCpN/WOnKtpmiiAMNLEecHz2oeEGKEBjuDJF7iaTx8uwP+8nboD22iaBWUpLDCatYX3bb+Eki5I2Nc42IoEFABvIi3kDSAd1bQ4MMbDtz2o+aRAQpe52HM0/zX8XKY0yTJUdreo3rWPmVA0RY32N+lAxEfC96IawF+vPpTf8AkIPcMHYbb8gZ5VKblY5sHAa3M9wvYb96ym8DEeP3DsBb6VlZ3jOMvjYgN7sQBptaedMoAwGo+ZsI7RSWUYohGoDpubdTzmu0XX4jLaRYxF/KnrNYdmoSRpK26xf0pXFx9bQiywInYW2JpdUDNDT0mYE9Kay6BTaAdtI3Mc+/nQ9eZO5vjawsDkP6+G1V3I5sg/nwq28Zw9SgxYj7VRMyhR471181xK/8OUYiEESCKhMojZV3wXvhTOGY2/2T7j+qkfZPEIW5sRI7RYior239psEI+EoDObT0PX0qs8vMhnuP5fDxCdRZgOQsp6b3MUl/8ywtyjFun91RMXEJ3/DQEe5o+JW1vx/bPFJlAqDoByouH7WYr+BnVUcwzRcA7xVKUmYo01rIvdeCjLJhhMNluOu8/wB1Be1OU1P5L8oJ+n0rzrhWdIdSTGmIPlXoOe4smLgypnV4fIQS3yBHrRPEt8ETwgeXpSv/AFLxdODhlSZ1FfSJ+1E4IST0vHkLXqc9oeDrj5YqbGVIMXUSJj0mgbfIvEGzB6musPFNXR/YvBU3xHj0J9QNqQ4r7IskthP+og2YDl0Mc+1PyLGUNg5llM1aOFcfKiGuJEdR/XaqsmXYGIiN5rsArt1pTSNy9Iy+bDBSQCW2g/K9NfqIsywk7dvhVI4PxEqy7ETse9XPLZoPpdUDC3MW5Vy5HItCMZPCCNWpz2ttauExWRboQ/qRvsD0ouLhGCNWkdCOe9iOVBAdYWGYkgSLx03rX+4/mYTHbUquAWjUI6EcptSWOJeYtvNhc2seh6UbCYgkMQZ5xEW+u9adQRciP9eUjsCBWXv1J1HwMozJqMFfdaJIAnlNxQV4eJ1KEB7kgkDttMU3ls+cNDBBXYoL/CKjsxmHZxpheoJjTve+8VckDKBXZj/KVPCRpI5aWPzisrWXL6Ru3ed6ynONaxsPBQqSRBNzB51vL4f6YMmxtB5TW0IYKAbA7Fb94muMTBNxMgme4HKKXYI2Lhoyi8KL7Reg/wCEpIgERcEGPjQcugWEYs3PblW83m0Qj9qk2HOOtS0VhxiGw15wL9oqicYSWI5jaOf916Bl8BXwkdekg899j8NqpvHMEK+8HcAbz2qt8UI3s5xJVwnDGCo362sfPl8K874zihnaOpMjvepniDxIHhnePOYjpVezCXIG/L+K0WeSL1R+Kwit5NJcDrTqcKxHBKqTFN8B4azYigg77fne3xrVmbzPs5iBBi6fCRv86hMzgFSPIfPb5V9Hf/zEfB0EWivPMf2POJmXWIUbfEj6EUuWRbzJZG/5+XqR4bjlTvI5g/kVf+J/9PQElT4r/Tr8/WqG2RZHKm0W/PSKyloa4cKzhJUqBeJk/H12q3DNlkKGxiB8K894W5U/3+fGrPh4zEQazk7IYjaSQw8UwI5DvJvTP+T4CuognbpPcVG+0OP7rRHInv8AnIVEpmrxePn+fzR8XzW2cQyp1aovFyNj3FIvlJtNSOI9r9Pqa6OAenl1v0rfHqy90PlsqdX0qx8GxijBSdKxc/xSAwb2EX3ptUYryMbf3U90ViJOkt4ugZTIt1G3yrWWzQgMhYnsbfP6Uhw7HxCFUjwjpPr6VOuqhToA2uBzmuZ1be4GZcuoOkFp6xtvt60DDRGkyZ53nsDbemMvmkw/AQGJ/bzXr+dq2zsHCg6VmDEc76Ta1ZXus6lsriEa5Fhvbc8jW8F9RN9RMwYEgdLchXWaC69B90gkcpIFc5DLth+IAG8i+46dKnpkBKR/XUWgfA1qgYmcg+ICTfbrWVqImXUkEk3g3P2reErMDqPh2tSeOjl1LGNO6jrTGLm1UeMEdvtTmEe7h0Ur4N58p8zS2LkXLayQRYAD+TtRkxA/iSwNtLdaEjmQDvMR/VHHE2XRynstndGFEFZMAE1XeJ4Q1anaTy7U5xCdSA9AfWlM+6EAn51sLNVs1gAsbHtIi/ag8K4Xrx0UixP3qfZFIJABHUD+63w/MjBfXpDxyJuBz2rUXoXC+A4SIF0gkc4qG43wFMEjEQab38v/AHFSXAfafAxx4HGsbobMPQ8u9F9q82hwHBIkiw9eVZ2cpfKZpWQONiJpTheYV3dhyMVGey+aGJl9IMwvzi/8+tVdPaMZPM4qOSULSPI7j0JpYPNfuIYoEz0ryvjuNhYuKShB7jYntFa9svbRsWMLAMBx4m5wbaBOxPXoap+LnMdAGaChP7WBH/j+b1AptOVry2VYe6p6zy+xq0cDypZCxtyqN9gWGMjFk5kbzV3w8qEUAC1Z2ag+0KAK4AspFvt61VMI+KWuZM9J5/Crpx5AzssRex8hy771XM3w8x4RJ5Dl6/nxpiFl/E0gyfwCn0NrHxHb+RS2HlGwhJBa3xPM9hvRso5Pit59T27VTNYGWHSR1NM4eCPWu8NpAAg0VkHSqZrLKBAFEzM6S6C45dY6d6WwsSKKmKRFVUU+E7ku7wQ0aYExUpkUR9YY2NyuzBuoreNhHUCnPeax8MbGNRG47d6ycc7p5b1Znn0EhRqKgETvexj4fOho9oawI29etaKkmbNaNR3AiJrvBy/MOWANgYt/PnQshMHMAQDBMb2rKVx8MsxMC1uXKsrnr9W/iTeNiK8QzajLDTFo23rlyCyM4Z3vCkix5ExagDIoHLK7EqZbbT1CiKL+qXIIJAFjA67V1fFzOm2jBwzalDC0bn1rEV2uUg9bGu8PLoAxUQW3M86Sx8w7SivZdzeT27edJ4qazK3U3MGGgTvzA51M5jgIxEAt2IH81EYCt4dUCx8O5AHWrfwrH1ovwrY2EonB4BowWU3a97n5CvIuNcTf9Q4SiCHKybXmvoXFHhryX2/4GGc4iaR1Eb9zy73o3vuQqXiZJ0LOGYOpHiA07/6kGT3nensli5nOOFLFtI3E2HMjzE+tIHL4pgMTBiBv5b17h7B+za5fAUsvjYAtP0+la5fFdCDQ7ov/AKdcMxMJWR9wD8Te3ak+L+yZxcwyuCAwOlosCT152Hzr0zAwESTYSaI5B6VbWXzr7UeyOJk31jxJO+/XeoEjEcBAvhB5bSbSfznX0vxDKI6lWUFTYjzrzzMewao5OGfCdgdx/wAe4q+SGFB33c+wyDDSCBJjtsANvSro9xVXyPAnw2UmwHQ7z6VPrjQIrmW2qnHcvLt8R51BZdyGvblHf0qz5/GBxHB5QLeVROewBEqPhTFjIrL1B5dfSks1lSrAyAOQ6DoP6rWXxGB8do2E7+tSY8a/S1U0bhuQZNuk/WP5pvCxpvFvOkMbLsDJY77ch5xzoyYgG7CqJ7UN7D71sm0g0DCMjf8APWiYZqmZQSsNtSoRjYJ1vMC3fen0S3f82oGLqBABJk8qHxUphM6nSyi+2kzblvRhgPMK8/GO89+1FGYQtCqAbn1H2oLnS83hrWBNz1FHnrYPvJDimLiK8AMRAuCYrKkMPJNf3dzu0H1EVlWFrZh3IRnVAJvfczzNawiyiWEa+nLse9HxUb3bX5k0TLJCw4BINgKTjj02V61uSE0hSrlpna0djS+YMzoWCSJmATW0Zwz2tPhG/n5XrnLZgs8OsAXJXoOXxrPZPmbVNI8bKZHIDbpNTHs7mBqdBbTH0qs42YBMJCiehv507wrMFHOI1pMERy261oYyvGM8iqzxThr4rRpkdanBig7G1Gwng0xVnhHscFdHe+ltUcpG1XtGAFKo9bzDwtaj3ccRzC6dxIveoxOMYanxOJJ61Qfbb2mdMQ4KeGAJPne1ULM8VMkF2J605Xu+iMPiCv7pBHnXTmvBfZLjmIuZw0V2K4jBWUnrsb17fg4vhFZZgZvFi0VHY+MqgljEU/nyNM1TuN5mYSbHeO3KKylotDHDOWnczRXMgj7UplkX9pFHLwY6/m9E0PnUm4m3M0TIZgjefzvTeZ2sLelRiQr7+kf1SxSmbWRJ2qOKgHkR5fepPUGSCJ/OtRb2MCPS9RUZDB5U7gXqKWdjIja1SOWF7betTNILQ4HOiaopPEYgxUQ3L4AD6lgDcnnRcrihYJ90HwzvfcfGlA5F/lTPDQH1CRbl0naBWeUl1mc3mNR/TgKbwSJnny61qt4jmY8LxbV1jr3rKP7tf1CzOZLDRqi92HO+wFOYOGAVYsW2AXb1npQ8uyMk6SApEmLk9a6/UBUiOfoo5C/Otdr3c+jxcY2VV8Qsz6QJ8Ct9xTWVw9LkzA0kx02i+5NA4Zie8oB326TTKYXjME2N1JHLl1qPtp+pDFwVVmcuZPI8vKjYOGpUG9785JphnQNCg/8AHaw/cTzpTN4ru6oJULebxflajzayl8HPOmmTKGxn9vQ1NYOY2NVtcdFUhjJ2vWsjxkK/6bSZ922wrpYrzg4oIsax3kVDZfNQQRtTbZgRNQ0l53/1D4KuITiJIcCGA/dG0d68wxsMKYAI6zXs3tPjiCA1z3t2+tea53DE83adlHkTenZCb9i8nGKuIwUBfd6ljz6x/NexZXGlBXmHBsiwhlRhzv8A+6uOHnmRbjYVhZOM9xvNGyg3rzv2uxSjYaAwYZiT1YgfHwmrDg504pZzYTYc+hmqJxvO/qYztuo8K9IXt0Jk+tJe1/Efj/D8ny/8pbh3EW0+9J7/AG60/ks4WbxTVRbE8I0z6dPXcU/wvNmYM1ZeHa7C4ttUVn8MhwY+fPpanMs4IBmuMwo+XaapmchiArBifzlUZnSQ8TEbd6LgjS1vn/7rniYDRtPr9KzNwjeXl+GpDLcoNRWBBtzqTy7HnvU0TmLiERYUHMPfmD8qNhJrYLuKJxXKFNJA8/6pIaOUWprHxFVAxKhjAuYJpUPe32rHy6NpDICVuG6dQ1HKSYwCkHUpBk9b96yusNmA8A1Kbi+07r6GsosdxsQkJAUsTFyfgDQMAlXOtZUXBvE9hRndpmGHikevUUfFxmBWQCpifM/Kru3LPiqCApbxNMjn1omPh3GIpvMGTFuZ70dgslmjSs7AT/y86EmIjQAsySQSOlPT6jsuHfQoIAJm7R996G2bVBrgMzG56RRsyikxEmPz1pZ9IENv0ECZ6xQieJ4o+aM4pmoYEbtty3pDMZhlbWLn19bVYsxw/WUa1uvIUbG4KHHauodWF7hcE4+H8GhgRaeXn/VWDVNUvM5U5Z9SiAek2qycOzepJmhLfLi8Zl8orG6g0picNwwZ0Cm1zQml8fOJcSKzkQnYKI2FVb2k42FXSjDVG31PlFd+0vFkRIVvGRAE853qhfqam8Um9yLwJvE1BI99U3h+1eMqaNKnwwGgggx2tbypHKYTMBAmp7OcWy7YH6OEoLFQqgrdRzJJG8fOpL2f4A2gFhcU3f8AOvQ8t6/xRaZIFZAIfp19QZigYWVIYeEi/Kfp/H9VeXyAAuPzqKj+JBRGwPUW+NPq8tvLYQAntzmh5neRf4fzNd4GIAIiuce8R9B9axatItpG1Ca5YD60dGKiwB60AHx7RIqkh5ZYHfvTeEeUUu63E7H5Uzl1kgUTTvBMK+qpXi2CrYZm0bUtkwFUAcqfBDCtcXLCVFysNiBZkVtcc62kaRcKZ3j+Z+VTy8EVcXUPduY71WMcAYjrJgEki5jyFCdyTn+Xo8NjHMKsHvWUngYoiG3FvkKyueP3b3j9U5LSwFy0x27k0DEcoum7FjE9PIcq7RwAzqJ5ADt3rjCOsnVbSbiN7bA9K67c8uzhIbBjCja9ydyTtWsXMSEReREnYWvyouWzjMzg4coIC7RNBzLaNkCixncm5iLWqPDPlmBmU1qLzBjvSmJl7lxJOr3OXrXbqLEtDf7Re/IUXJ4BZGk7mzc+80VO5HD1SbCeRk7VIJiqFv8ADmTUTk8wcMQzajMTE+VOcTyp8OIu3ToesVvi9WeXmNnuHriAyBteq6R+mdCA6gJCG0jnoJsd6sKZ0BDzaonGxtbq8gFEcCYsdYJ+Milb0fi/Jx+Px5mn+yiHzeJ/o035R8Se81UuJ8RxJcK3hAj+xU9xTjuOrkKU0k+EFARHnF6TLFyNWWw5P+oYD1ExRpXLj+P/AMv+aouzMbzJ3JpzL5Jmso8zVxw/Z5WOooF2GlbCpXJcD0NtbY/Y1btxQGrHAOAsMUahbvXpuTwwg07EUDLZdUtAkUHN5+CDyHTe1WWW541mVC9T0mPOKo+f4jqeBqEcmF/h/wC6k+PZs+IyLwV6HoOxqtZXCfGbUZM8unalopTAzxBk0zh5oOJ5H61i+z7aJaQKXyuDocowNuf5esp1aKSceCDQjYiYomNiAaYb4/auXa9xFZkukBi+1OZZxNVzifFAikIRPXoKhE45iJs1qMWb1bBx6ewsYVRODcZd0ViBJ+xqzZJ2JBNHcNY8G9UXjuAUzDFSASdjPPY9wa9Aw1hRVe9qsuBpxIE7X68j9a07kHmqZCgnXOqb+IfxWU1gYCMCShmTWVztbWPL4iDDXYbj1G/nSuO4DFgpawgDbua2uCP3aYBOkCxE7TQ8zhuR4WCWiT06gV10Sxjuw3caJUQzEADmCa7YENqIM/7NtYXjlQstllTEQ6jbxEzYg7etOZzQ7q7lgi8gDcnYmraZBw+MpKxpFpHY3ig4OE4VtLEgEzNiasGYzKLhkIAJsoA/iofEbwSQSATEDqbTU9OwO9WsDwqWYWtA5nyqy8OzYACtsesVAZPBJDszCdlQDpvc862uYMKNBmYA5io87L9VrfLowMAX6VRuMYbo7hSQSCLEgwbET3H2qfw+IlGhvdj8vS/G8PWoxE8X+3lyNO7XihBwNHw9asXtsSTHXfnR/Z7Bl2Vx7ot8aJwYshB/axPkDNxTWeT9Ji6c+X2+dVtDyUzh4KhZoWLjjYULJZkOgYdPmN5plcATPW9G2aKwcdtThvQ1HZnEMkjb7b/zVnbKKfj8qw8OQ8vzf607GXnr8KfEeRIHT8sauHBuCIiyRepfDyiqLCjp3o2clcbKSsRFU3iWV0Oe/L71eszjQCOVed8fzwZ4FyDPcVeolc3jQBq5HzpXiGeIA0mx3pTOZie559+9DzGHIUnmI/DQ2tozGe5saH+jUicvMkCYFLCGMXq8V5rH7LupQpzVj8Df61dMI6VQ/wDJf/K31rzbI60JdLxOoHmP5q+8Jz6Y2E66rlfUMLj51VXB1Y4bAe9FvMXFQHtRxFWTDgSxNxHPv611xD2lXDwtX7tIgdzVTy2IXK4jOQCdrRJJ3qXqg+6RGaUWit0uFHMXrKx1WViyMMSpWyixjmehoHE0EgJIYbztFBx8qUKAs/iuTP7Y2tQsXAknQTA3YzHp1rfy9BYz7bMLD8DBSA8+93rSZd2UI73FyQPhTGFhFQJI1HltQMwCPe99jGkfITQoFsFYKZXxyHMBdue/M0TFwm0Kizubk+Zknzo+Fk4ETykmdz09KzO4wVNIEkABe5609eCO/Nn6UlWM25Tv3iu8zgpKuCYG2m00tkcQMzK76Rp94Dwj/iCdz3plME4mkJKon7zzB5AVaNYlmI4dQXPoNvWhLnFRm0tK8hy2oONlQQwBmSbzB73oGXRm8KAADcjYQbUbOU3l8dWhDpuOW3ypPNcIYMSpleSkxB9Bf1qLxs3+mVC77AnkJuTVyTxordRSb7ocdKrZTGZNfIyLRAmL/ansHilwpPrRc9gq1iKQ/wAYKIApck/dPYOeDACRTyZgRVBz+c/TI5eVd5b2lMGLgTVsJXtsccvwGhPizVayXHEeBNzy/POpTGaUPlv9DV5iiOPcbIXShAa9/LcH0M+lUp3knuSY+1P8URgxB53+H58KRwMrz6jbytFTRchLzHTnUli5TwLMRb41vh+RZ3VF63PQU9msrpJDXM3H5+XrLOJIJgAar2A7c96Xy2RQvIUgb2+VGXEVCR333oeTzbISH6x6XgjtRn3R34ttlSBoiBPTcHvSoypQgoCCL2mZ5CppG1MVYbiQw6fzTWRUAtqN/oRa/pVsgUXl8J4DOCd/nBtUjho3hQCxO+3qR1rk4iayvNbydiYN/Kjvia/EgDOItsdwJFUMvrCWMtzmayiFcIWYkEWia3TX9Uxn8UswYtCqDIF4vzNK5fGEjTqPMT9YrvFQ/pBDGm0mLm9t+tN5fBAUsRBsIntSdsOBL58KWRpg8/QcqPlhqTUwubA8xS2O7ETo2Nu5piTYAnwDxReW6TV8Xe4+XXVyxYDtzJ6DrSis7yykQZgEctrUV8cyFYRq5ded67RIYAm0i3O9J9VCdNAWSImw5sbXPYU5gZ7QpX9puBzmucbKkkt+0WjrSOXww7Rr8SzIHIE96HqdpTAxksthaTO5npST4w1QhAkGwHLrQ8bJkssCwJv6VvLwdRvOwKiBbc0HmWmOBcHTEYM6hl3aRueQq45nLqUiAOkVG+z+FowVPW/pUn+pNbOrGbVjO5SDUVj4dWnPLNVzPkLvWUtlTPap1XQCJk1ArmALDY/xT2fxziYzE3AkL033+VcHIrYXv05VPig7yTYuxGhoq+eyXEBiK2G5lh9Iqr5XLrpIMgCb84pjggOHigjmQN+4mrjTWbjXCARqHKorAyEbD4996vT4QYXqLbLDUYFhY+fSrlPE2DwXh4W9RXtRgEYojYirVlhFQ/tWgChzyrJ3XN7ql/ihgSohun8VxitpKFh7sj1NgT8Kx8Z0hkJ3M9IO1qYyqBiwbmASN/OnUjIuWWbftgMDHxHajYiFVYkEHeRe3aswnABVSGEbDqOlGVjYSNh+GiZTJZhX35iDNc5LMqgARSzAkTFwBMCPOj42DoaLX6DftW8uqq+uCCRFhY9/Og4+2uT6LCy/vENztWU9iZZSZiPL796ymcLvLYKK5diWPINJjyFEzGOS4YbD4k9x0rniOWJU6W0mReJ3tO9NZkgNgqALpc+Va3qzndxg5kkeMQPtS6ZoTpCwpmBz86YfDBgR1v5bUxgZcBgN4UnbnTvorD3IYJV2ZmJBmBPxtXOFP6kRqmSWPQbR05VnF28RgQUAgjuJNJ8NxmkkmZ68qM81tKpiMRAYHxHyqObLHCJYMSze9H9U6i6U6zf1JpLjuKUutjH8VdpjQG2Lm/8AtnWWBYEjqb2HahYGOGELM6L9N61l8scTTLkeQFdJlApIUkTqJPXTsPKtOHHY7eWV8yXEAyYaYYnwiewjnTz5iLVSODcRbDYqBIIH0rfEeNuDYfPvVWVozOaUDeqJ7T8RlWRT4mkeQjel+J8cxCSLDlURlxqY6rncnmbVhbQSuDgRaTPM0zgYRBOknYb9qLlsLwlgYO3ymswssHXVJBVuXOOtShALEww2ok+UeXOgF9J1fuUzNHzK6SSObAehN6Xw8H/vhZsWC+QMUg+Y/V6TgZsuiaD4mUGf9RFz59KLoVQFG1RPs/jSMQRAVtIHYCKkcQ1Nvx0RsIio32rScuTGxE+XOm8HensfLLiYbK2xFZ4kcry/CdY59r3InlTmWwwqnS1ysCdxz/qg4vD1GIIJGmR5x9KbZgHAgbiT1sah7yuR1sJ3dQDYhR4us7ya7wpBLuQV2AXy6U9gqNIt7wv6mh5nLDSoEKA3IedG6/qcw/dycQOCIiCLDf8A/VPLk1Oi0wZ8iNqWyuXDLB3UkBufX70TKZknVyMi/wAqXI9TUKLGZ/8A1WVH53BOr3zsPzet1fPj9V8OX3f/2Q==",
+      "desc": "",
+      "price": 105,
+      "id": 24
+    },
+    {
+      "breed": "хаски",
+      "age": "2",
+      "img": "https://cdn.pixabay.com/photo/2020/06/28/12/22/siberian-husky-5349126_960_720.jpg",
+      "desc": "",
+      "price": 123,
+      "id": 25
+    },
+    {
+      "breed": "риджбек",
+      "age": "3",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOFnQBHr39__mkfo-q4cQNywUWon1_ryAQ8w&usqp=CAU",
+      "desc": "",
+      "price": 70,
+      "id": 26
+    },
+    {
+      "breed": "сиамская кошка",
+      "age": "1,5-года",
+      "img": "https://damion.club/uploads/posts/2022-02/thumbs/1643948483_56-damion-club-p-siamskaya-visloukhaya-koshka-zhivotnie-60.jpg",
+      "desc": "",
+      "price": 30,
+      "id": 27
+    },
+    {
+      "breed": "сиамская кошка",
+      "age": "1-мес",
+      "img": "https://koteiki.com/wp-content/uploads/2018/04/img_266-12.jpeg",
+      "desc": "",
+      "price": 23,
+      "id": 28
+    },
+    {
+      "breed": "сибирская",
+      "age": "2",
+      "img": "https://www.murcat.ru/porodi/img/sibirskaya_koshka.jpg",
+      "desc": "",
+      "price": 45,
+      "id": 29
+    },
+    {
+      "breed": "сибирская",
+      "age": "2",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYg2obiuHQLKoG7vucUo-qjHe-keBT-QS6cQMeYAZ1faxbLlY8VIcsSiPyYHbvSlqbUC8&usqp=CAU",
+      "desc": "",
+      "price": 34,
+      "id": 30
+    },
+    {
+      "breed": "сококе",
+      "age": "2",
+      "img": "https://mrkot.com/wp-content/uploads/2018/09/sokoke1.jpg",
+      "desc": "",
+      "price": 32,
+      "id": 31
+    },
+    {
+      "breed": "мейнкун",
+      "age": "",
+      "img": "https://skolko-stoit.ru/wp-content/uploads/2021/12/skolko-stoit-mein-kun-1.jpg",
+      "desc": "",
+      "price": 45,
+      "id": 32
+    },
+    {
+      "breed": "мейнкун",
+      "age": "",
+      "img": "https://s4.stc.all.kpcdn.net/family/wp-content/uploads/2022/05/mejn-kun-koshka_oblogka_960-960x540.jpg",
+      "desc": "",
+      "price": 65,
+      "id": 33
+    },
+    {
+      "breed": "швейцарская",
+      "age": "1",
+      "img": "https://funart.pro/uploads/posts/2021-07/1627007012_1-funart-pro-p-shveitsarskaya-visloukhaya-koshka-zhivotni-1.jpg",
+      "desc": "",
+      "price": 200,
+      "id": 34
+    },
+    {
+      "breed": "швейцарская",
+      "age": "4-мес",
+      "img": "https://ourkoshki.ru/wp-content/uploads/2017/06/kotenok-vislouhij.jpg",
+      "desc": "",
+      "price": 120,
+      "id": 35
+    },
+    {
+      "breed": "швейцарская",
+      "age": "2-мес",
+      "img": "https://klkfavorit.ru/wp-content/uploads/9/6/9/96980f7902606f5bdb86ffc232a61294.jpeg",
+      "desc": "",
+      "price": 120,
+      "id": 36
+    },
+    {
+      "breed": "турецкая ангора",
+      "age": "3-мес",
+      "img": "https://img.novosti-n.org/upload/ukraine/1079100.jpg",
+      "desc": "",
+      "price": 56,
+      "id": 37
+    },
+    {
+      "breed": "бурманская",
+      "age": "2",
+      "img": "https://damion.club/uploads/posts/2022-02/1643884630_2-damion-club-p-burmanskaya-koshka-shokoladnogo-okrasa-zhi-2.jpg",
+      "desc": "",
+      "price": 67,
+      "id": 38
+    },
+    {
+      "breed": "бурманская",
+      "age": "2",
+      "img": "https://catpeople.ru/bried/burmanskaya/ava.jpg",
+      "desc": "",
+      "price": 34,
+      "id": 39
+    },
+    {
+      "breed": "бурманская",
+      "age": "",
+      "img": "https://freya-way.ru/file/125105%D0%B1%D1%83%D1%80%D0%BC%D0%B0%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BA%D0%BE%D1%88%D0%BA%D0%B0%20%D1%86%D0%B5%D0%BD%D0%B0%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C.JPG",
+      "desc": "",
+      "price": 34,
+      "id": 40
     }
   ]
 }
