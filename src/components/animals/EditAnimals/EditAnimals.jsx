@@ -60,16 +60,7 @@ const EditAnimals = () => {
             value={animal.breed}
           />
         </div>
-        <div>
-          <input
-            className="name-inp"
-            type="text"
-            placeholder="Name"
-            name="name"
-            onChange={handleInp}
-            value={animal.name}
-          />
-        </div>
+
         <div>
           <input
             className="age-inp"
