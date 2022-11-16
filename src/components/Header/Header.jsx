@@ -142,19 +142,20 @@ function ResponsiveAppBar() {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map(page => (
-              <Button
-                key={page.id}
-                onClick={() => navigate(page.path)}
-                sx={{ my: 2, color: "white", display: "block" }}>
-                {page.type}
-              </Button>
+             <Button
+             key={page.id}
+             onClick={() => navigate(page.path)}
+             sx={{ my: 2, color: "white", display: "block" }}>
+             {page.type}
+           </Button>
+
             ))}
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt={user[0]} src="..." />
               </IconButton>
             </Tooltip>
             <Menu

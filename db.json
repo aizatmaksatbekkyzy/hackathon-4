@@ -8,6 +8,33 @@
       "desc": "w",
       "price": 123,
       "id": 5
+    },
+    {
+      "breed": "as",
+      "name": "xsa",
+      "age": "1234",
+      "img": "http://nemetzkaya-ovcharka.ru/wp-content/uploads/2021/06/1-nemeckaja-ovcharka-e1667824593135.jpg",
+      "desc": "sx",
+      "price": 123,
+      "id": 6
+    },
+    {
+      "breed": "eijge",
+      "name": "kljlkj",
+      "age": "ljlkj",
+      "img": "lkjk",
+      "desc": "jlkj",
+      "price": 8989,
+      "id": 7
+    },
+    {
+      "breed": "БАСЕНДЖИ",
+      "name": "no",
+      "age": "5",
+      "img": "https://www.proplan.ru/sites/owners.proplan.ru/files/styles/image_1920x767/public/2021-11/basendzhi%201920x767.webp?itok=YpylyPVY",
+      "desc": "Если выбираете собаку, которая станет вам верным и добрым другом — обратите внимание на басенджи. Умные и общительные, они отлично ладят не только с людьми, но и с другими собаками.",
+      "price": 200,
+      "id": 8
     }
   ]
 }
