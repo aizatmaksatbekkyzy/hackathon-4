@@ -13,7 +13,7 @@ export default function CardAnimal({ item }) {
   console.log(item);
   const navigate = useNavigate();
   return (
-    <Card className="container">
+    <Card>
       <Card
         sx={{ maxWidth: 500 }}
         style={{

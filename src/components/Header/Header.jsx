@@ -116,7 +116,7 @@ function ResponsiveAppBar() {
                 display: { xs: "block", md: "none" },
               }}>
               {pages.map(page => (
-                <MenuItem onClick={() => navigate(page.path)}>
+                <MenuItem key={page.type} onClick={() => navigate(page.path)}>{page.type}
                   <Typography textAlign="center">{page.type}</Typography>
                 </MenuItem>
               ))}
@@ -144,7 +144,7 @@ function ResponsiveAppBar() {
             {pages.map(page => (
               <>
                 <Button
-                  // key={page}
+                  key={page.type}
                   onClick={() => navigate(page.path)}
                   sx={{ my: 2, color: "white", display: "block" }}>
                   {page.type}
@@ -156,7 +156,7 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt={user[0]} src="..." />
               </IconButton>
             </Tooltip>
             <Menu

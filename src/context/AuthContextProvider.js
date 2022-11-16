@@ -63,6 +63,31 @@ const AuthContextProvider = ({ children }) => {
         navigate('/');
        };
 
+       const checkAuth = async () => {
+        console.log('CHECK TOKEN FUNC WORKED');
+        let token = JSON.parse(localStorage.getItem('token'));
+    
+        try {
+          const Authorization = `Bearer ${token.access}`;
+          let res = await axios.post(
+            `${API}api/token/refresh/`,
+            { refresh: token.refresh },
+            { headers: { Authorization } }
+          );
+    
+          localStorage.setItem('token', JSON.stringify({
+            refresh: token.refresh,
+            access: res.data.access
+          }));
+    
+          let username = localStorage.getItem('username');
+          setUser(username);
+        } catch(error) {
+          console.log(error);
+          logout();
+        }
+       };
+
 
   return (
     <authContext.Provider value={{
@@ -72,7 +97,7 @@ const AuthContextProvider = ({ children }) => {
         register,
         login,
         logout,
-        // checkAuths
+        checkAuth
     }}>
        { children }
     </authContext.Provider>
