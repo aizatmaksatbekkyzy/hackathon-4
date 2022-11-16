@@ -85,8 +85,7 @@ export default function Cart() {
               <StyledTableCell align="right">
                 <button
                   onClick={() => deleteAnimalInCart(row.item.id)}
-                  className="cart-btn">
-                  {" "}
+                  style={{}}>
                   Delete From Cart
                 </button>
               </StyledTableCell>
