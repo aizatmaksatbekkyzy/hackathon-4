@@ -10,7 +10,7 @@ const AnimalsList = ({ page, setPage, changeSideBarStatus }) => {
     getAnimals();
   }, []);
 
-  const itemsOnPage = 4;
+  const itemsOnPage = 3;
 
   const count = Math.ceil(animals.length / itemsOnPage);
 
