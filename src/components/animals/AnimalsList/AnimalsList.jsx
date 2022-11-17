@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import CardAnimal from "../CardAnimal/CardAnimal";
 import Pagination from "@mui/material/Pagination";
 import { useAnimals } from "../../../contexts/AnimalContextProvider";
+import "../../../style/animalSideBar.css"
 
 const AnimalsList = ({ page, setPage, changeSideBarStatus }) => {
   const { animals, getAnimals } = useAnimals();
@@ -26,17 +27,18 @@ const AnimalsList = ({ page, setPage, changeSideBarStatus }) => {
 
   return (
     <div>
+        <div id="btn-sb">
       <h1
         style={{
-          marginLeft: "40%",
           marginTop: "5%",
           color: "rgb(8,112,224)",
         }}>
         Animals List
       </h1>
-      <button id="btn-sb" onClick={changeSideBarStatus}>
+      <button className="btn-filter" onClick={changeSideBarStatus}>
         Filter&Search Menu
       </button>
+      </div>
       <div className="animals-list">
         {animals ? (
           currentData().map(item => <CardAnimal key={item.id} item={item} />)
@@ -54,12 +56,13 @@ const AnimalsList = ({ page, setPage, changeSideBarStatus }) => {
           onChange={handlePage}
         /> */}
       </div>
+      <div  className="lol">
       <Pagination
-        className="lol"
         count={count}
         page={page}
         onChange={handlePage}
-      />
+        />
+        </div>
     </div>
     // <div className='products-block'>
     //     <div className='title'>

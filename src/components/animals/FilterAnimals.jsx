@@ -20,10 +20,8 @@ const FilterAnimals = () => {
       defaultValue="all"
       onChange={e => fetchByParams('type', e.target.value)}
     >
-      <FormControlLabel value="all" control={<Radio />} label="All" />
-      <FormControlLabel value="sport" control={<Radio />} label="Sport" />
-      <FormControlLabel value="clothes" control={<Radio />} label="Clothes" />
-      <FormControlLabel value="electronics" control={<Radio />} label="Electronics" />
+      <FormControlLabel value="cat" control={<Radio />} label="cat" />
+      <FormControlLabel value="dog" control={<Radio />} label="dog" />
     </RadioGroup>
   </FormControl>
   )

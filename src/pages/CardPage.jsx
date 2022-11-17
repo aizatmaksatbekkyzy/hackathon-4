@@ -6,7 +6,7 @@ import AnimalsSideBar from "../components/animals/AnimalsSideBar/AnimalsSideBar"
 
 const CardPage = () => {
   const [page, setPage] = useState(1);
-  const [isSideBar, setIsSideBar] = useState(true);
+  const [isSideBar, setIsSideBar] = useState(false);
 
   function changeSideBarStatus() {
     setIsSideBar(!isSideBar);

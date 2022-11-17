@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { UserContext } from "../context/AuthContextProvider"
+import "../style/reg.css"
  
 
 const RegistrationPage = () => {
