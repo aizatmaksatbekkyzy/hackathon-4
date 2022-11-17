@@ -60,6 +60,16 @@ const EditAnimals = () => {
             value={animal.breed}
           />
         </div>
+        <div>
+          <input
+            className="breed-inp"
+            type="text"
+            placeholder="Name"
+            name="name"
+            onChange={handleInp}
+            value={animal.name}
+          />
+        </div>
 
         <div>
           <input

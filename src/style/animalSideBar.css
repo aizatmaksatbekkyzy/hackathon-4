@@ -6,3 +6,28 @@
   width: 250px;
   height: 90vh;
 }
+
+#btn-sb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-filter {
+    background-color: rgb(123, 172, 172);
+    width: 160px;
+    height: 40px;
+    border: 1px solid rgb(54, 54, 58);
+    border-radius: 5px;
+}
+
+.btn-filter:hover {
+    background-color: rgb(190, 224, 224);
+    transition: 0.8s;
+}
+
+.lol {
+    display: flex;
+    justify-content: center;
+}

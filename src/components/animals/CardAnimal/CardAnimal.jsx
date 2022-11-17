@@ -36,6 +36,10 @@ const CardAnimal = ({ item }) => {
               Breed:
               {item.breed}
             </Typography>
+            <Typography gutterBottom variant="h5" component="div">
+              Name:
+              {item.name}
+            </Typography>
             <Typography gutterBottom variant="h5" component="div"></Typography>
             <Typography variant="body2" color="">
               Age:

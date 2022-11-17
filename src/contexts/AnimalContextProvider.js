@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useReducer } from "react";
 import axios from "axios";
 import { MOTIONS, JSON_API_ANIMALS } from "../helpers/bigConsts";
-// import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 export const animalContext = createContext();
 export const useAnimals = () => useContext(animalContext);
@@ -25,8 +25,8 @@ const reducer = (state = INIT_STATE, action) => {
 const AnimalContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, INIT_STATE);
 
-  // const navigate = useNavigate();
-  // const location = useLocation();
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const getAnimals = async () => {
     const { data } = await axios(`${JSON_API_ANIMALS}`);
@@ -57,6 +57,20 @@ const AnimalContextProvider = ({ children }) => {
     getAnimals();
   };
 
+  const fetchByParams = (query, value) => {
+    const search = new URLSearchParams(location.search);
+
+    if(value === 'all'){
+        search.delete(query);
+    } else {
+        search.set(query, value);
+    };
+
+    const url = `${location.pathname}?${search.toString()}`;
+
+    navigate(url);
+};
+
   const value = {
     animals: state.animals,
     animalDetails: state.animalDetails,
@@ -66,6 +80,7 @@ const AnimalContextProvider = ({ children }) => {
     deleteAnimal,
     saveEditedAnimal,
     getOneAnimal,
+    fetchByParams
   };
 
   return (
