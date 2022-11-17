@@ -47,8 +47,8 @@ export default function HomeText() {
   const handleChange = panel => (event, newExpanded) => {
     setExpanded(newExpanded ? panel : false);
   };
-  const handleChange2 = panel2 => (event2, newExpanded2) => {
-    setExpended2(newExpanded2 ? panel2 : false);
+  const handleChange2 = panel2 => (event2, newExpended2) => {
+    setExpended2(newExpended2 ? panel2 : false);
   };
   return (
     <div>
@@ -75,7 +75,7 @@ export default function HomeText() {
           marginLeft: "20%",
         }}>
         <Accordion
-          expanded2={expended2 === "panel12"}
+          expended2={expended2 === "panel12"}
           onChange={handleChange2("panel12")}>
           <AccordionSummary
             aria-controls="panel12d-content"

@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 import { useCart } from "../../../contexts/CartContextProvider";
 import "../../../style/cardAnimal.css";
 import Stack from "@mui/material/Stack";
-
+import LikeAnimal from "../LikeAnimal/LikeAnimal";
 const CardAnimal = ({ item }) => {
   const navigate = useNavigate();
   const { deleteAnimal } = useAnimals();
@@ -63,17 +63,14 @@ const CardAnimal = ({ item }) => {
               Delete
             </Button>
             <Button
-              size="middle"
+              size="big"
               onClick={() => navigate(`/edit/${item.id}`)}
               style={{ color: "blue" }}>
               Edit
             </Button>
-            {/* <Button
-              size="small"
-              onClick={() => addAnimalToCart(item)}
-              style={{ color: "white" }}>
-              Add to Cart
-            </Button> */}
+            <Button>
+              <LikeAnimal />
+            </Button>
           </CardActions>
           <Stack spacing={2} direction="row">
             <Button

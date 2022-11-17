@@ -5,7 +5,7 @@ const LikeAnimal = () => {
 
   return (
     <div>
-      <h2 onClick={() => setLike(!like)}>Like:{like ? "❤️" : "🤍"}</h2>
+      <h3 onClick={() => setLike(!like)}>Like:{like ? "💙" : "💛"}</h3>
     </div>
   );
 };

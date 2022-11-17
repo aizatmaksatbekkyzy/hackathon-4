@@ -85,7 +85,7 @@ export default function Cart() {
               <StyledTableCell align="right">
                 <button
                   onClick={() => deleteAnimalInCart(row.item.id)}
-                  style={{}}>
+                  style={{ width: "40%", backgroundColor: "" }}>
                   Delete From Cart
                 </button>
               </StyledTableCell>
@@ -93,7 +93,7 @@ export default function Cart() {
           ))}
         </TableBody>
       </Table>
-      <Typography>
+      <Typography style={{ width: "35%", backgroundColor: "blue" }}>
         Total Price: {cart?.totalPrice}
         <Button onClick={cartCleaner}>
           <div className="buy">Buy Now</div>
