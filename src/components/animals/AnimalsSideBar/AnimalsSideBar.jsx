@@ -14,7 +14,6 @@ const AnimalsSideBar = ({ isSideBar, setPage, setIsSideBar }) => {
       q: search,
     });
   }, [search]);
-
   useEffect(() => {
     getAnimals();
     setPage(1);
@@ -22,15 +21,18 @@ const AnimalsSideBar = ({ isSideBar, setPage, setIsSideBar }) => {
 
   return isSideBar ? (
     <div className="sideBar">
-      <input
-        type="text"
-        value={search}
-        onChange={e => setSearch(e.target.value)}
-        placeholder="Search..."
-      />
-      <button onClick={() => setIsSideBar(false)}>Close</button>
+      <div className="inp-filter">
+        <input
+          type="text"
+          value={search}
+          onChange={e => setSearch(e.target.value)}
+          placeholder="Search..."
+        />
+        <button className="btn-close" onClick={() => setIsSideBar(false)}>
+          Close
+        </button>
+      </div>
       <FilterAnimals />
-      ProductSideBar
     </div>
   ) : null;
 };

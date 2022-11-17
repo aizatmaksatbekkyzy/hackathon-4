@@ -36,7 +36,6 @@ export default () => {
           <img
             src="https://www.rinti.de/fileadmin/_processed_/3/d/csm_HuK_AdobeStock_187577407_d8a7284c00.jpg"
             width="98%"
-            heidht="100px"
             alt=""
             style={{
               borderRadius: "50px",
@@ -79,6 +78,7 @@ export default () => {
           <img
             src="https://www.theladders.com/wp-content/uploads/dog-cat-190709-800x450.jpg"
             width="98%"
+            height="480px"
             alt=""
             style={{
               borderRadius: "50px",
@@ -93,6 +93,7 @@ export default () => {
           <img
             src="https://www.gulftoday.ae/-/media/gulf-today/images/articles/lifestyle/2019/4/18/dog-owners.ashx?h=450&la=en&w=750&hash=224CE67C7C872BE4758996C0BCB7423F"
             width="98%"
+            height="480px"
             alt=""
             style={{
               borderRadius: "50px",
