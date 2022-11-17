@@ -29,7 +29,10 @@ const AnimalContextProvider = ({ children }) => {
   const location = useLocation();
 
   const getAnimals = async () => {
-    const { data } = await axios(`${JSON_API_ANIMALS}`);
+    console.log(window.location.search);
+    const { data } = await axios(
+      `${JSON_API_ANIMALS}/${window.location.search}`
+    );
     dispatch({
       type: MOTIONS.GET_ANIMALS,
       payload: data,
@@ -60,16 +63,17 @@ const AnimalContextProvider = ({ children }) => {
   const fetchByParams = (query, value) => {
     const search = new URLSearchParams(location.search);
 
-    if(value === 'all'){
-        search.delete(query);
+    if (value === "all") {
+      search.delete(query);
     } else {
-        search.set(query, value);
-    };
+      search.set(query, value);
+    }
 
     const url = `${location.pathname}?${search.toString()}`;
 
     navigate(url);
-};
+    getAnimals();
+  };
 
   const value = {
     animals: state.animals,
@@ -80,7 +84,7 @@ const AnimalContextProvider = ({ children }) => {
     deleteAnimal,
     saveEditedAnimal,
     getOneAnimal,
-    fetchByParams
+    fetchByParams,
   };
 
   return (

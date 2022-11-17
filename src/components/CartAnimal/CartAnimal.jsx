@@ -9,15 +9,11 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 //custom
 import { useCart } from "../../contexts/CartContextProvider";
-// import { useAnimals } from "../../contexts/CartContextProvider";
+
 import { Button, TextField, Typography } from "@mui/material";
 
 export default function Cart() {
   const { getCart, cart, changeAnimalCount, deleteAnimalInCart } = useCart();
-
-  // React.useEffect(() => {
-  //   getCart();
-  // }, []);
 
   function cartCleaner() {
     localStorage.removeItem("cart");
@@ -57,12 +53,32 @@ export default function Cart() {
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
         <TableHead>
           <TableRow>
-            <StyledTableCell>Image</StyledTableCell>
-            <StyledTableCell align="right">Breed</StyledTableCell>
-            <StyledTableCell align="right">PRICE</StyledTableCell>
-            <StyledTableCell align="right">Count</StyledTableCell>
-            <StyledTableCell align="right">Sub Price</StyledTableCell>
-            <StyledTableCell align="right"></StyledTableCell>
+            <StyledTableCell style={{ backgroundColor: "rgb(8,121,224)" }}>
+              Image
+            </StyledTableCell>
+            <StyledTableCell
+              align="right"
+              style={{ backgroundColor: "rgb(8,121,224)" }}>
+              Breed
+            </StyledTableCell>
+            <StyledTableCell
+              align="right"
+              style={{ backgroundColor: "rgb(8,121,224)" }}>
+              PRICE
+            </StyledTableCell>
+            <StyledTableCell
+              align="right"
+              style={{ backgroundColor: "rgb(8,121,224)" }}>
+              Count
+            </StyledTableCell>
+            <StyledTableCell
+              align="right"
+              style={{ backgroundColor: "rgb(8,121,224)" }}>
+              Sub Price
+            </StyledTableCell>
+            <StyledTableCell
+              align="right"
+              style={{ backgroundColor: "rgb(8,121,224)" }}></StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -85,7 +101,12 @@ export default function Cart() {
               <StyledTableCell align="right">
                 <button
                   onClick={() => deleteAnimalInCart(row.item.id)}
-                  style={{ width: "40%", backgroundColor: "" }}>
+                  style={{
+                    width: "40%",
+                    backgroundColor: "rgb(8,121,224)",
+                    border: "none",
+                    borderRadius: "10px",
+                  }}>
                   Delete From Cart
                 </button>
               </StyledTableCell>
@@ -93,10 +114,15 @@ export default function Cart() {
           ))}
         </TableBody>
       </Table>
-      <Typography style={{ width: "35%", backgroundColor: "blue" }}>
-        Total Price: {cart?.totalPrice}
+      <Typography
+        style={{
+          width: "35%",
+          backgroundColor: "rgb(8,121,224)",
+          borderRadius: "10px",
+        }}>
+        Total Price: {cart?.totalPrice}$
         <Button onClick={cartCleaner}>
-          <div className="buy">Buy Now</div>
+          <div style={{ color: " black" }}>Buy Now</div>
         </Button>
       </Typography>
     </TableContainer>
